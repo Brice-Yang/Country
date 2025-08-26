@@ -1,0 +1,747 @@
+/* 重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #0f1e2d url('背景.png') repeat fixed;
+    background-size: auto;
+    min-height: 100vh;
+}
+
+/* 首页特定背景 */
+body.home-page {
+    background: #0f1e2d url('一/背景.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* 风景区页面背景填充屏幕 */
+body.scenery-page {
+    background: #0f1e2d url('背景.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* 文化库页面背景填充屏幕 */
+body.culture-page {
+    background: #0f1e2d url('背景.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* 文化库页面背景填充屏幕 */
+body.culture-page {
+    background: #0f1e2d url('背景.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* 头部导航 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(25, 45, 70, 0.7);
+    backdrop-filter: saturate(120%) blur(2px);
+    z-index: 1000;
+    padding: 12px 0;
+    height: 60px; /* 固定菜单高度 */
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.logo {
+    width: 60px; /* 放大LOGO */
+    height: 60px; /* 填充满菜单高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* 防止LOGO被压缩 */
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    opacity: 0.85;
+}
+
+.nav-item.active {
+    color: #fff;
+}
+
+.nav-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #1e90ff;
+}
+
+@keyframes slideIn {
+    from { width: 0; left: 50%; }
+    to { width: 100%; left: 0; }
+}
+
+/* 主要内容区域 */
+.main {
+    min-height: 100vh;
+    padding-top: 0;
+}
+
+/* 选项卡导航栏 */
+.tab-navigation {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tab-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 20px 0;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    max-width: 320px;
+}
+
+.tab-button:hover {
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.tab-button.active {
+    color: #1e90ff;
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #1e90ff;
+}
+
+/* 选项卡内容 */
+.tab-content {
+    display: none;
+    margin-top: 120px; /* 为固定导航栏留出空间 */
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* 选项卡导航栏 */
+.tab-navigation {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tab-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 20px 0;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    max-width: 320px;
+}
+
+.tab-button:hover {
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.tab-button.active {
+    color: #1e90ff;
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #1e90ff;
+}
+
+/* 选项卡内容 */
+.tab-content {
+    display: none;
+    margin-top: 120px; /* 为固定导航栏留出空间 */
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* 首页封面样式 */
+.cover {
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cover-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(10%); /* 向下偏移，实现居中偏下 */
+}
+
+.cover-content img {
+    margin-bottom: 30px;
+}
+
+.cover-content h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cover-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* 主内容栏（半透明浅色背景，可滚动） */
+.content-shell {
+    max-width: 960px;
+    margin: 90px auto 60px;
+    background-color: rgba(245, 245, 240, 0.82);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 24px 0 12px;
+}
+
+.content-paragraph {
+    color: #374151;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    margin: 12px 0 24px;
+    line-height: 1.8;
+}
+
+.content-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 12px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.content-img:hover {
+    transform: scale(1.02);
+}
+
+/* 顶部英雄区（模式A） */
+.hero-block {
+    margin-bottom: 24px;
+}
+
+/* 图2区域：左右1:1布局 */
+.image-text-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    margin: 12px 0 24px;
+}
+
+.image-text-layout .content-img {
+    margin: 0;
+}
+
+.image-text-layout .content-paragraph {
+    margin: 0;
+    align-self: center;
+}
+
+/* 三图并排网格（模式C） */
+.three-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 12px 0 24px;
+}
+
+.three-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.three-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* 底部图片区（模式D） */
+.bottom-image {
+    margin: 12px 0 0;
+}
+
+/* IP选项卡样式 */
+.ip-first-row {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 25px;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+.ip-main-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.ip-basic-info {
+    margin-bottom: 20px;
+}
+
+.ip-name-line,
+.ip-birthday-line {
+    font-size: 16px;
+    color: #1f2937;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.ip-personality-line {
+    font-size: 16px;
+    color: #1f2937;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.design-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 12px;
+}
+
+.ip-design-description p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.ip-second-row {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.ip-stickers-section {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    flex: 0 0 35%;
+}
+
+.sticker-main {
+    width: 50%;
+    height: 330px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.sticker-secondary {
+    width: 50%;
+    height: 330px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.ip-expressions-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.expressions-row-1,
+.expressions-row-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.expressions-row-1 img,
+.expressions-row-2 img {
+    width: 100%;
+    height: 160px;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+/* 单独调整10.png的大小和位置，使其与9.png更协调 */
+.expressions-row-2 img[src="三/IP/10.png"] {
+    height: 115px; /* 适当调小高度 */
+    width: 90%;    /* 适当调小宽度 */
+    margin: 17px auto 0; /* 居中显示并适当往下调 */
+}
+
+.expressions-row-1 img:hover,
+.expressions-row-2 img:hover {
+    transform: scale(1.1);
+}
+
+
+/* 海报选项卡样式 */
+.poster-main-section {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.poster-main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 扩大主海报样式 - 与文字对齐 */
+.small-poster {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    align-self: stretch;
+}
+
+.poster-description p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.poster-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.poster-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* 调整4.5.png大小的样式 - 保持与1.2.png相同尺寸 */
+.resized-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poster-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* 装饰插画选项卡样式 */
+.illustration-main-section {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.illustration-applications {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 缩小插画图片样式 */
+.small-illustration {
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.illustration-concept p {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* 装饰插画新布局样式 */
+.illustration-main-section-new {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.illustration-images-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* 调整1.2.png大小 - 保持相同尺寸 */
+.small-illustration {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.illustration-concept-new {
+    flex: 1;
+    min-width: 300px;
+}
+
+.illustration-concept-new p {
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0;
+}
+
+/* 6个图片在同一行的样式 */
+.illustration-elements-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* 调整6个图片大小的样式 - 进一步放大，保持相同尺寸 */
+.resized-illustration {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.resized-illustration:hover {
+    transform: scale(1.1);
+}
+
+/* IP选项卡样式 */
+.ip-main-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.ip-main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ip-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.ip-birthday {
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.ip-description p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* 保留风景区预览与展示旧样式（未在本页使用，可留存） */
+.scenery-display { display: none; }
+.scenery-preview { display: none; }
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container { 
+        padding: 0 15px; 
+        gap: 15px;
+    }
+    .nav { gap: 18px; }
+    .content-shell { 
+        margin: 76px 8px 40px; 
+        padding: 16px; 
+        border-radius: 8px;
+    }
+    .content-title { font-size: 22px; }
+    .three-grid { grid-template-columns: 1fr; gap: 10px; }
+    .image-text-layout { 
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+    .cover-content {
+        transform: translateY(5%); /* 移动端减少偏移 */
+    }
+    .logo {
+        width: 50px; /* 移动端适当缩小LOGO */
+        height: 50px;
+    }
+    
+    /* 移动端选项卡样式 */
+    .tab-container {
+        flex-direction: column;
+    }
+    
+    .tab-button {
+        max-width: none;
+        padding: 15px 0;
+    }
+    
+    .tab-content {
+        margin-top: 180px;
+    }
+    
+    /* 移动端布局调整 */
+    .ip-first-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .ip-main-img {
+        height: auto;
+        max-height: 200px;
+    }
+    
+    .ip-second-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .ip-stickers-section {
+        flex: none;
+        justify-content: center;
+    }
+    
+    .sticker-main,
+    .sticker-secondary {
+        width: 50%;
+        height: 160px;
+    }
+    
+    .expressions-row-1,
+    .expressions-row-2 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+    }
+    
+    .poster-main-section,
+    .illustration-main-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .poster-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+
+}

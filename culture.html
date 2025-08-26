@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文化库</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="culture-page">
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="左上角LOGO.png" alt="LOGO">
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-item">首页</a>
+                <a href="scenery-library.html" class="nav-item">风景区</a>
+                <a href="culture.html" class="nav-item active">文化库</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main">
+        <!-- 选项卡导航栏 -->
+        <div class="tab-navigation">
+            <div class="tab-container">
+                <button class="tab-button active" data-tab="ip">IP</button>
+                <button class="tab-button" data-tab="poster">海报</button>
+                <button class="tab-button" data-tab="illustration">装饰插画</button>
+            </div>
+        </div>
+
+        <!-- IP选项卡内容 -->
+        <div class="tab-content active" id="ip-content">
+            <div class="content-shell">
+                <!-- 第一行：IP角色主图与介绍 -->
+                <div class="ip-first-row">
+                    <div class="ip-main-image">
+                        <img src="三/IP/1.png" alt="IP角色主图" class="ip-main-img">
+                    </div>
+                    <div class="ip-main-info">
+                        <div class="ip-basic-info">
+                            <p class="ip-name-line"><strong>姓名：</strong>客仔</p>
+                            <p class="ip-birthday-line"><strong>生日：</strong>3月10日</p>
+                            <p class="ip-personality-line"><strong>性格：</strong>他是一位乐观开朗的小男生，浑身散发着蓬勃的力量感。对自然的馈赠满怀热爱——清晨的朝阳、傍晚的晚霞，都是他眼中独一无二的每日惊喜；而海浪轻拍礁石的韵律、微风拂过耳畔的温柔，更是他最爱的自然絮语。</p>
+                        </div>
+                        <div class="ip-design-description">
+                            <h3 class="design-title">设计说明</h3>
+                            <p>客仔的形象设计取材于当地标志性景观"客鸟尾"的独特石笋群，将这份自然的奇趣融入IP灵魂。同时，结合"客鸟尾"名称中"客鸟即喜鹊"的故事背景，设计出与客仔形影不离的好友——"小沙"小沙以石头灰的喜鹊造型呈现，与客仔构成"鸟儿停靠石礁"的生动动态整体形象在结构上兼具方正的力量感与圆润的亲和力。客仔与小沙在客鸟尾海景区悄然生长他们带着自然的馈赠与温暖的热情真诚邀请每一位朋友来到这里，共同赴一场治愈心灵、惊艳视角的自然盛宴。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第二行：IP角色多种形象 -->
+                <div class="ip-second-row">
+                    <div class="ip-stickers-section">
+                        <img src="三/IP/2.png" alt="IP角色贴纸集合" class="sticker-main">
+                        <img src="三/IP/11.png" alt="表情11" class="sticker-secondary">
+                    </div>
+                    <div class="ip-expressions-section">
+                        <div class="expressions-row-1">
+                            <img src="三/IP/3.png" alt="表情1">
+                            <img src="三/IP/4.png" alt="表情2">
+                            <img src="三/IP/5.png" alt="表情3">
+                            <img src="三/IP/6.png" alt="表情4">
+                        </div>
+                        <div class="expressions-row-2">
+                            <img src="三/IP/7.png" alt="表情5">
+                            <img src="三/IP/8.png" alt="表情6">
+                            <img src="三/IP/9.png" alt="表情7">
+                            <img src="三/IP/10.png" alt="表情8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 海报选项卡内容 -->
+        <div class="tab-content" id="poster-content">
+            <div class="content-shell">
+                <!-- 区域一：主视觉海报与文字说明 -->
+                <div class="poster-main-section">
+                    <div class="poster-main-image">
+                        <img src="三/海报/1.png" alt="主视觉海报" class="small-poster">
+                    </div>
+                    <div class="poster-description">
+                        <p>客鸟尾海报将客鸟尾景观与当地人文共同融合，通过不同手法描绘客鸟尾的风景，我们可以从海报中看到客鸟尾的自然景观人文物迹。同时，也可以跟随海报风格来体会当地。</p>
+                        <p>位于顶上的是以客鸟尾最有特点的石笋为原题材，该石笋因长相如多个同五指合并的手掌排列在一起，因此多数游客称其为五指石。</p>
+                        <p>而其下两图则以客鸟尾局部景观与人文事迹为原题材一边是展现客鸟尾的游玩属性，一遍则是展现客鸟尾当地居民的渔业生活，你能从海报中看到客鸟尾的些许特色，但当我们亲自前往那里时，或许能感受到不同的特点。</p>
+                    </div>
+                </div>
+
+                <!-- 区域二：系列海报网格 -->
+                <div class="poster-grid">
+                    <img src="三/海报/2.png" alt="系列海报1">
+                    <img src="三/海报/3.png" alt="系列海报2">
+                    <img src="三/海报/4.png" alt="系列海报3" class="resized-poster">
+                    <img src="三/海报/5.png" alt="系列海报4" class="resized-poster">
+                </div>
+            </div>
+        </div>
+
+        <!-- 装饰插画选项卡内容 -->
+        <div class="tab-content" id="illustration-content">
+            <div class="content-shell">
+                <!-- 区域一：应用效果图与文字说明 - 新布局 -->
+                <div class="illustration-main-section-new">
+                    <div class="illustration-images-row">
+                        <img src="三/插画/1.jpg" alt="应用效果图1" class="small-illustration">
+                        <img src="三/插画/2.png" alt="应用效果图2" class="small-illustration">
+                    </div>
+                    <div class="illustration-concept-new">
+                        <p>客鸟尾装饰插画多以客鸟尾的局部素材为原型，石笋，草木礁石被侵蚀所展现的纹理等等，都作为插画的灵感，我们可以通过插画来看到客鸟尾一些细小的景观，在庞大的自然系统下，我们或许可以看到独属于客鸟尾的一些微惊喜。</p>
+                    </div>
+                </div>
+
+                <!-- 区域二：核心设计元素网格 - 6个图片在同一行 -->
+                <div class="illustration-elements-row">
+                    <img src="三/插画/3.png" alt="设计元素1" class="resized-illustration">
+                    <img src="三/插画/4.jpg" alt="设计元素2" class="resized-illustration">
+                    <img src="三/插画/5.jpg" alt="设计元素3" class="resized-illustration">
+                    <img src="三/插画/6.jpg" alt="设计元素4" class="resized-illustration">
+                    <img src="三/插画/7.jpg" alt="设计元素5" class="resized-illustration">
+                    <img src="三/插画/8.jpg" alt="设计元素6" class="resized-illustration">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
